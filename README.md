@@ -44,7 +44,7 @@ This repository contains automated tests for the Saucedemo login page. The tests
 - **Locators**: XPath
 - **Patterns**: Page Object Model
 - **Assertions**: Mocha
-- **Logging**: Optional (use logging from the selected framework)
+- **Logging**: Pino (pino-pretty)
 
 ### Test Execution
 
