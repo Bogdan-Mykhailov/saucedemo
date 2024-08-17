@@ -21,6 +21,8 @@
         "wdio-geckodriver-service": "^5.0.2"
     },
     "dependencies": {
-        "@wdio/globals": "^8.40.2"
+        "@wdio/globals": "^8.40.2",
+        "pino": "^9.3.2",
+        "pino-pretty": "^11.2.2"
     }
 }

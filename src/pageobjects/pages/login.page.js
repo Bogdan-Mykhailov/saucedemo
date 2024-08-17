@@ -1,7 +1,6 @@
-
 const LoginForm = require('../components/login.form');
 const Page = require('./page');
-const { LOGIN_PAGE_URL } = require('../../utils/constants');
+const { url } = require('../../data/dataProvider');
 
 /**
  * Represents the login page of the application.
@@ -61,7 +60,7 @@ class LoginPage extends Page {
    * @returns {Promise<void>} A promise that resolves when the page is opened.
    */
   open() {
-    return super.open(LOGIN_PAGE_URL);
+    return super.open(url.loginPageUrl);
   }
 
   /**
