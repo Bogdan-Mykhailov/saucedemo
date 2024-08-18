@@ -40,11 +40,11 @@ This repository contains automated tests for the Saucedemo login page. The tests
 ### Test Configuration
 
 - **Test Automation Tool**: WebDriverIO
-- **Browsers**: Edge, Firefox
+- **Browsers**: Edge, Firefox, Chrome
 - **Locators**: XPath
 - **Patterns**: Page Object Model
 - **Assertions**: Mocha
-- **Logging**: Optional (use logging from the selected framework)
+- **Logging**: Pino (pino-pretty)
 
 ### Test Execution
 
