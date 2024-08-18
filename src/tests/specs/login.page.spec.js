@@ -28,7 +28,6 @@ describe('Saucedemo login form tests', () => {
       logger.info(`Setting form fields with random 
       username: ${username.invalidUsername} and valid password: ${password.validPassword}`);
       await setFormFields(username.invalidUsername, password.validPassword);
-
       logger.info('Verifying form fields have correct values');
       expect(await loginPage.username.getValue()).toEqual(username.invalidUsername);
       expect(await loginPage.password.getValue()).toEqual(password.validPassword);
@@ -62,7 +61,6 @@ describe('Saucedemo login form tests', () => {
     }
   })
 
-
   it('should display "Password is required" error message if empty password field',
     async () => {
     try {
@@ -71,7 +69,6 @@ describe('Saucedemo login form tests', () => {
        */
       logger.info('Setting form fields with valid username and password');
       await setFormFields(username.validUsername, password.validPassword);
-
       logger.info(`Verifying form fields have correct values 
       username: ${username.validUsername} and password: ${password.validPassword}`);
       expect(await loginPage.username.getValue()).toEqual(username.validUsername);

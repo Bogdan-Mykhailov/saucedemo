@@ -3,8 +3,6 @@ const Page = require('./page');
 const { url } = require('../../data/dataProvider');
 
 /**
- * Represents the login page of the application.
- *
  * This class extends the base `Page` class and provides methods and selectors
  * specific to the login page, such as interacting with the username and password fields,
  * clicking the submit button, and handling error messages.

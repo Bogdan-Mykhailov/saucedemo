@@ -1,8 +1,5 @@
 const Page = require('./page');
-
 /**
- * Represents the inventory page of the application.
- *
  * This class extends the base `Page` class and provides methods and selectors
  * specific to the inventory page, such as checking the page title.
  */

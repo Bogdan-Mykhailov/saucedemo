@@ -2,7 +2,6 @@
  * Represents a login form with methods to access various form elements.
  */
 class LoginForm {
-
   /**
    * Returns a WebDriverIO element based on the provided parameter.
    *
