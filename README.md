@@ -50,3 +50,4 @@ This repository contains automated tests for the Saucedemo login page. The tests
 
 - **Parallel Execution**: Tests are configured to run in parallel on multiple browsers.
 - **Logging**: Logs are captured and can be reviewed to debug test execution.
+- **Data Provider**: Tests use different accepted usernames to ensure comprehensive coverage and validate various scenarios.

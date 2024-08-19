@@ -1,11 +1,18 @@
 module.exports = {
   username: {
-    invalidUsername: 'stixler',
-    validUsername: 'standard_user',
+    validUsernames: [
+      'standard_user',
+      'locked_out_user',
+      'problem_user',
+      'performance_glitch_user',
+      'error_user',
+      'visual_user'
+    ],
   },
   errorMessage: {
     usernameError: 'Username is required',
     passwordError: 'Password is required',
+    lockedOutUsernameError: 'Sorry, this user has been locked out',
   },
   password: {
     validPassword: 'secret_sauce',
