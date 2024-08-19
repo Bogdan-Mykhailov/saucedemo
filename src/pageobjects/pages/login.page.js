@@ -1,9 +1,8 @@
 const LoginForm = require('../components/login.form');
-const Page = require('./page');
+const BasePage = require('./base.page');
 const { url } = require('../../data/dataProvider');
-const {browser} = require("@wdio/globals");
 
-class LoginPage extends Page {
+class LoginPage extends BasePage {
   constructor() {
     super();
     this.loginForm = new LoginForm();
@@ -44,19 +43,6 @@ class LoginPage extends Page {
 
   async clickOnLoginButton() {
     await this.loginButton.click();
-  }
-
-  async clearField(field) {
-    await field.click();
-    const isMac = process.platform === 'darwin';
-
-    if (isMac) {
-      await browser.keys(['Meta', 'a']);
-    } else {
-      await browser.keys(['Control', 'a']);
-    }
-
-    await browser.keys('Delete');
   }
 }
 

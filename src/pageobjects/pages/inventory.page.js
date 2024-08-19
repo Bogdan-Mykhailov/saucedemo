@@ -1,4 +1,4 @@
-const Page = require('./page');
+const Page = require('./base.page');
 
 class InventoryPage extends Page {
   get pageTitle() {
