@@ -1,31 +1,20 @@
-const {
-  PAGE_TITLE,
-  VALID_PASSWORD,
-  VALID_USERNAME,
-  ERROR_PASSWORD_REQUIRED,
-  ERROR_USERNAME_REQUIRED,
-  INVALID_USERNAME,
-  INVENTORY_PAGE_URL,
-  LOGIN_PAGE_URL
-} = require('../utils/constants');
-
 module.exports = {
   username: {
-    invalidUsername: INVALID_USERNAME,
-    validUsername: VALID_USERNAME,
+    invalidUsername: 'stixler',
+    validUsername: 'standard_user',
   },
   errorMessage: {
-    passwordError: ERROR_PASSWORD_REQUIRED,
-    usernameError: ERROR_USERNAME_REQUIRED,
+    usernameError: 'Username is required',
+    passwordError: 'Password is required',
   },
   password: {
-    validPassword: VALID_PASSWORD,
+    validPassword: 'secret_sauce',
   },
   url: {
-    loginPageUrl: LOGIN_PAGE_URL,
-    inventoryPageUrl: INVENTORY_PAGE_URL,
+    loginPageUrl: 'https://www.saucedemo.com/',
+    inventoryPageUrl: 'https://www.saucedemo.com/inventory.html',
   },
   pageTitle: {
-    inventoryPageTitle: PAGE_TITLE,
+    inventoryPageTitle: 'Swag Labs',
   },
 }
