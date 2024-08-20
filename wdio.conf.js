@@ -52,9 +52,9 @@ exports.config = {
   // https://saucelabs.com/platform/platform-configurator
   //
   capabilities: [
-    { browserName: 'firefox' },
-    { browserName: 'chrome' },
-    { browserName: 'MicrosoftEdge' },
+    {browserName: 'firefox'},
+    {browserName: 'chrome'},
+    {browserName: 'MicrosoftEdge'},
   ],
   acceptInsecureCerts: true,
   //

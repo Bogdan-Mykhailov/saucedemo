@@ -1,8 +1,9 @@
 const LoginForm = require('../components/login.form');
 const BasePage = require('./base.page');
-const { url } = require('../../data/dataProvider');
 
 class LoginPage extends BasePage {
+  url = 'https://www.saucedemo.com/';
+
   constructor() {
     super();
     this.loginForm = new LoginForm();
@@ -25,14 +26,14 @@ class LoginPage extends BasePage {
   }
 
   async open() {
-    await super.open(url.loginPageUrl);
+    await super.open(this.url);
   }
 
-  async enterUsername(username){
+  async enterUsername(username) {
     await this.usernameField.setValue(username);
   }
 
-  async enterPassword(password){
+  async enterPassword(password) {
     await this.passwordField.setValue(password);
   }
 

@@ -1,8 +1,11 @@
 const Page = require('./base.page');
 
 class InventoryPage extends Page {
+  url = 'https://www.saucedemo.com/inventory.html';
+  title = "//div[@class='app_logo']";
+
   get pageTitle() {
-    return $("//div[@class='app_logo']");
+    return $(this.title);
   }
 }
 
