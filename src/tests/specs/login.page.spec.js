@@ -1,6 +1,6 @@
 const LoginPage = require('../../pageobjects/pages/login.page');
 const InventoryPage = require('../../pageobjects/pages/inventory.page');
-const logger = require('../../../logger.config');
+const logger = require('../../config/logger.config');
 const {user} = require('../../data/user');
 const {browser} = require("@wdio/globals");
 
